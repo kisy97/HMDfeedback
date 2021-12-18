@@ -21,7 +21,7 @@ public class SampleUserPolling_ReadWrite : MonoBehaviour
     {
         serialController = GameObject.Find("SerialController").GetComponent<SerialController>();
 
-        Debug.Log("Press A or Z to execute some actions");
+        Debug.Log("Press Z or X to execute some actions");
     }
 
     // Executed each frame
@@ -33,16 +33,16 @@ public class SampleUserPolling_ReadWrite : MonoBehaviour
 
         // If you press one of these keys send it to the serial device. A
         // sample serial device that accepts this input is given in the README.
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
-            Debug.Log("Sending A");
-            serialController.SendSerialMessage("a");
+            Debug.Log("Sending Z");
+            serialController.SendSerialMessage("z");
         }
 
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.X))
         {
-            Debug.Log("Sending S");
-            serialController.SendSerialMessage("s");
+            Debug.Log("Sending X");
+            serialController.SendSerialMessage("x");
         }
     }
 

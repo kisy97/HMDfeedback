@@ -17,15 +17,15 @@ public class raincontrol : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
-            Debug.Log("A");
+            Debug.Log("Z");
             particleObject.Play();
         }
 
-        else if (Input.GetKeyDown(KeyCode.S))
+        else if (Input.GetKeyDown(KeyCode.X))
         {
-            Debug.Log("S");
+            Debug.Log("X");
             particleObject.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
         }
 
